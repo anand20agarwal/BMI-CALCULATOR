@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1>BMI Calculator</h1>
-      <div>
+      <div className="input-container">
         <label htmlFor="weight">Weight (kg):</label>
         <input
           type="number"
@@ -31,7 +31,7 @@ function App() {
           required
         />
       </div>
-      <div>
+      <div className="input-container">
         <label htmlFor="feet">Height (feet):</label>
         <input
           type="number"
@@ -42,8 +42,8 @@ function App() {
         />
       </div>
       <button onClick={calculateBMI}>Calculate BMI</button>
-      {bmi && <p>Your BMI is: {bmi}</p>}
-      {bmi === null && <p>Please enter valid weight and height.</p>}
+      {bmi && <p className="result">Your BMI is: {bmi}</p>}
+      {bmi === null && <p className="error">Please enter valid weight and height.</p>}
     </div>
   );
 }
