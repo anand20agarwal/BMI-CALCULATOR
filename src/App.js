@@ -17,7 +17,7 @@ function App() {
       setBMI(null);
     }
   };
-
+     
   return (
     <div className="App">
       <h1>BMI Calculator</h1>
