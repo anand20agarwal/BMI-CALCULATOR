@@ -13,7 +13,7 @@ function App() {
     if (!isNaN(weightFloat) && !isNaN(heightFloat) && weightFloat > 0 && heightFloat > 0) {
       const bmiValue = (weightFloat / (heightFloat * heightFloat)).toFixed(2);
       setBMI(bmiValue);
-    } else {
+    } else { 
       setBMI(null);
     }
   };
